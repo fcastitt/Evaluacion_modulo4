@@ -1,0 +1,141 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: grey;
+}
+
+.contenido {
+	background-color: white;
+	padding: 1rem 1rem;
+	border-radius: 30px;
+	border: white 5px solid;
+	width: 100%;
+	
+	margin: 0 auto;
+}
+
+.tituloPrincipal {
+	color: white;
+	text-align: center;
+	font-family: Impact;
+}
+
+.formularios {
+	max-width: 600px !important;
+}
+
+.contenido-centrar{
+ 	text-align: center;
+}
+
+table{
+	
+	width:100%;
+}
+
+/* modificacion bootstrap NavBar*/
+.navbar {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.navbar a:hover {
+	background-color: blue;
+}
+
+.navbar-collapse {
+	flex-grow: 0 !important;
+}
+
+/* Estilos para formularios */
+.label-input {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0.5rem 0;
+}
+
+.label-input label {
+	margin-bottom: 0.2rem;
+}
+
+.label-input input {
+	height: 1.5rem;
+	padding-left: 0.5rem;
+}
+
+.label-input select {
+	height: 1.875rem;
+	padding-left: 0.5rem;
+}
+
+/* Estilos para validate- error */
+
+label.error{     
+    opacity: 80%;
+    color: red;
+    font-weight: bold;
+    display: block;
+    position: relative;
+  
+    text-align: center;
+    align-content: center;  
+}
+
+input.error{
+    background-color:#ffeded;
+    border-Color: red;
+    border-style: dashed;
+} 
+
+select.error{
+    background-color:#ffeded;
+    border-Color: red;
+    border-style: dashed;
+} 
+
+
+/* Dispositivos pequeños (teléfonos, 600px y menos) */
+@media only screen and (max-width: 600px) {
+	.navbar {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.contenido {
+		width: 90%;
+	}
+	
+	table {
+       display: block;
+       overflow-x: auto;
+     }
+	
+}
+
+/* Dispositivos pequeños (tabletas verticales y teléfonos largos, 600px y más) */
+@media only screen and (min-width: 600px) {
+   
+    .contenido {
+		width: 80%;
+	}
+	
+	table {
+       display: block;
+       overflow-x: auto;
+     }
+}
+  
+/* Dispositivos largos (laptops/escritorio, 992px y más) */
+@media only screen and (min-width: 992px) {
+  
+    .contenido {
+		width: 100%;
+		max-width: 1000px;
+	}
+	
+	table {
+       width: 100%;
+       display: table;
+     }
+    
+}
